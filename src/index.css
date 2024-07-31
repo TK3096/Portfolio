@@ -7,3 +7,13 @@ body,
 #root {
   height: 100%;
 }
+
+body {
+  background-color: rgb(10 10 10);
+  color: #fff;
+}
+
+::selection {
+  background: rgb(239 68 68);
+  color: #000;
+}
