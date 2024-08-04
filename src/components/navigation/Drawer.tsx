@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars, FaXmark } from 'react-icons/fa6'
-import { motion, useAnimation, AnimatePresence } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 
 import { Menu } from '@/components/navigation//Menu'
 
