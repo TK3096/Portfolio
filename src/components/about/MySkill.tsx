@@ -45,18 +45,18 @@ export const MySkill: React.FC = () => {
     <Container className={cn('h-full px-4 pt-10 flex flex-col items-center')}>
       <h1 className='font-bold text-2xl md:text-4xl'>MY SKILL</h1>
 
-      <div className='mt-8 space-y-5'>
+      <div className='mt-16 space-y-5'>
         <SkillList title='Language' data={LANGUAGE_SKILL} />
-        <Divider />
+        <Divider length={12} />
         <SkillList
           title='Framework and Library'
           data={FRAMEWORK_AND_LIBS_SKILL}
         />
-        <Divider />
+        <Divider length={12} reverse />
         <SkillList title='Database' data={DATABASE_SKILL} />
-        <Divider />
+        <Divider length={12} time={300} />
         <SkillList title='Other' data={OTHER_SKILL} />
-        <Divider />
+        <Divider length={12} time={300} reverse />
         <SkillList title='Version Control' data={VERSION_CONTROL_SKILL} />
       </div>
     </Container>

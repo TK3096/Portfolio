@@ -54,7 +54,7 @@ export const SkillList: React.FC<SkillListProps> = (props: SkillListProps) => {
             variants={itemVariants}
             whileHover={{ scale: 1.2 }}
           >
-            <Chip>
+            <Chip className='hover:bg-red-500 hover:text-black transition-colors duration-200'>
               <span className='font-semibold text-sm'>{skill}</span>
             </Chip>
           </motion.div>
