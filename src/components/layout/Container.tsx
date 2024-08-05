@@ -10,5 +10,7 @@ interface ContainerProps {
 export const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
   const { className, children } = props
 
-  return <div className={cn(className)}>{children}</div>
+  return (
+    <div className={cn('max-w-[1200px] mx-auto', className)}>{children}</div>
+  )
 }

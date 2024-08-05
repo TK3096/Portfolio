@@ -1,16 +1,15 @@
 import { Introduction } from '@/components/about/Introduction'
-import { Container } from '@/components/layout/Container'
 
 const AboutPage = () => {
   return (
     <main>
-      <Container className='h-screen'>
+      <div className='h-screen'>
         <Introduction />
-      </Container>
+      </div>
 
-      <Container className='h-screen'>
+      <div className='h-screen'>
         <div>next section</div>
-      </Container>
+      </div>
     </main>
   )
 }

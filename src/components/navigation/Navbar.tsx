@@ -3,11 +3,11 @@ import { useLocation } from 'react-router-dom'
 
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 
+import { Container } from '@/components/layout/Container'
 import { Logo } from '@/components/navigation/Logo'
 import { Menu } from '@/components/navigation/Menu'
 import { Drawer } from '@/components/navigation/Drawer'
 
-import { CONTAINER_STYLE } from '@/libs/constants'
 import { cn } from '@/libs/utils'
 
 export const Navbar: React.FC = () => {
@@ -18,11 +18,11 @@ export const Navbar: React.FC = () => {
   return (
     <nav
       className={cn(
-        'fixed w-full z-50 bg-neutral-900 bg-opacity-35 backdrop-blur-md',
-        y > 30 && 'bg-opacity-80',
+        'fixed w-full z-50 bg-neutral-900 bg-opacity-35',
+        y > 30 && 'bg-opacity-80 backdrop-blur-md',
       )}
     >
-      <div className={cn('py-3 px-4', CONTAINER_STYLE)}>
+      <Container className='px-3 py-4'>
         <div className='flex justify-between items-center'>
           <Logo />
           <div className='hidden md:block'>
@@ -32,7 +32,7 @@ export const Navbar: React.FC = () => {
             <Drawer pathname={pathname} />
           </div>
         </div>
-      </div>
+      </Container>
     </nav>
   )
 }
