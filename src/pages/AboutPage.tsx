@@ -1,4 +1,5 @@
 import { Introduction } from '@/components/about/Introduction'
+import { MySkills } from '@/components/about/MySkills'
 
 const AboutPage = () => {
   return (
@@ -8,7 +9,7 @@ const AboutPage = () => {
       </div>
 
       <div className='h-screen'>
-        <div>next section</div>
+        <MySkills />
       </div>
     </main>
   )

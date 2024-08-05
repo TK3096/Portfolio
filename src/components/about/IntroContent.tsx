@@ -71,7 +71,7 @@ export const IntroContent: React.FC = () => {
 
   return (
     <div className='space-y-4'>
-      <h1 className='font-bold text-7xl'>
+      <h1 className='font-bold text-5xl md:text-7xl'>
         Hi, I&#39;m{' '}
         <motion.span
           initial='hidden'
@@ -82,7 +82,7 @@ export const IntroContent: React.FC = () => {
         </motion.span>
       </h1>
 
-      <h3 className='text-3xl'>
+      <h3 className='text-xl md:text-3xl'>
         I&#39;m a <strong className='text-red-600'>full stack developer</strong>
       </h3>
 
@@ -94,7 +94,7 @@ export const IntroContent: React.FC = () => {
           initial='hidden'
           animate={controls}
           variants={rootWordVariants}
-          className='text-md'
+          className='text-sm md:text-md'
         >
           {DESCRIPTION.split(' ').map((word, wi) => (
             <span key={`${word}-${wi}`} className='inline-block'>
