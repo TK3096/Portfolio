@@ -43,7 +43,7 @@ export const SkillList: React.FC<SkillListProps> = (props: SkillListProps) => {
       <h3 className='font-semibold text-lg md:text-xl'>{title}</h3>
       <motion.div
         ref={ref}
-        className='flex gap-2 justify-center flex-wrap md:w-[700px]'
+        className='flex gap-2 justify-center flex-wrap w-[300px] md:w-[700px]'
         initial='hidden'
         animate={controls}
         variants={containerVariants}
