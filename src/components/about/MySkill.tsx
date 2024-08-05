@@ -53,16 +53,16 @@ export const MySkill: React.FC = () => {
 
       <div className='mt-16 space-y-5'>
         <SkillList title='Language' data={LANGUAGE_SKILL} />
-        <Divider length={length} />
+        <Divider length={length} time={400} />
         <SkillList
           title='Framework and Library'
           data={FRAMEWORK_AND_LIBS_SKILL}
         />
-        <Divider length={length} reverse />
+        <Divider length={length} time={400} reverse />
         <SkillList title='Database' data={DATABASE_SKILL} />
-        <Divider length={length} time={300} />
+        <Divider length={length} time={500} />
         <SkillList title='Other' data={OTHER_SKILL} />
-        <Divider length={length} time={300} reverse />
+        <Divider length={length} time={500} reverse />
         <SkillList title='Version Control' data={VERSION_CONTROL_SKILL} />
       </div>
     </Container>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
 
+import { cn } from '@/libs/utils'
+
 interface DividerProps {
   length?: number
   time?: number
@@ -31,12 +33,14 @@ export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
       {Array.from({ length }).map((_, index) => (
         <motion.div
           key={index}
-          className='rounded-full bg-neutral-500'
+          className={cn(
+            'rounded-full bg-neutral-500 w-6 h-1',
+            activeIndex === index && 'bg-emerald-500',
+          )}
           animate={{
-            height: activeIndex === index ? '0.5rem' : '0.15rem',
+            scale: activeIndex === index ? 1.5 : 1,
           }}
           transition={{ duration }}
-          style={{ width: '1.75rem', height: '0.25rem' }}
         />
       ))}
     </div>
