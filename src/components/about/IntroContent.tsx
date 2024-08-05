@@ -94,7 +94,7 @@ export const IntroContent: React.FC = () => {
           initial='hidden'
           animate={controls}
           variants={rootWordVariants}
-          className='text-sm md:text-md'
+          className='text-sm md:text-lg'
         >
           {DESCRIPTION.split(' ').map((word, wi) => (
             <span key={`${word}-${wi}`} className='inline-block'>

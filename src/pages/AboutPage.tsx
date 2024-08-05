@@ -1,5 +1,5 @@
 import { Introduction } from '@/components/about/Introduction'
-import { MySkills } from '@/components/about/MySkills'
+import { MySkill } from '@/components/about/MySkill'
 
 const AboutPage = () => {
   return (
@@ -9,7 +9,7 @@ const AboutPage = () => {
       </div>
 
       <div className='h-screen'>
-        <MySkills />
+        <MySkill />
       </div>
     </main>
   )

@@ -14,6 +14,11 @@ body {
   color: #fff;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 ::selection {
   background: rgb(239 68 68);
   color: #000;
