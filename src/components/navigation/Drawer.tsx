@@ -80,7 +80,7 @@ export const Drawer: React.FC<DrawerProps> = (props: DrawerProps) => {
       </button>
 
       <motion.div
-        className={cn('fixed inset-0 z-50 bg-neutral-900 w-3/4 h-full')}
+        className={cn('fixed inset-0 z-50 bg-neutral-900 w-3/4 h-screen')}
         variants={drawerVariants}
         initial='inactive'
         animate={controls}

@@ -1,16 +1,15 @@
-import { Introduction } from '@/components/about/Introduction'
-import { MySkill } from '@/components/about/MySkill'
+import { IntroductionSection } from '@/components/about/IntroductionSection'
+import { MySkillSection } from '@/components/about/MySkillSection'
+import { ShowcaseSection } from '@/components/about/ShowcaseSection'
 
 const AboutPage = () => {
   return (
     <main>
       <div className='h-screen'>
-        <Introduction />
+        <IntroductionSection />
       </div>
-
-      <div className='h-screen'>
-        <MySkill />
-      </div>
+      <MySkillSection />
+      <ShowcaseSection />
     </main>
   )
 }

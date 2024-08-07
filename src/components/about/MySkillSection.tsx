@@ -42,16 +42,16 @@ const DATABASE_SKILL = [
 
 const VERSION_CONTROL_SKILL = ['Git', 'GitHub', 'GitLab']
 
-export const MySkill: React.FC = () => {
+export const MySkillSection: React.FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)')
 
   const length = isMobile ? 6 : 12
 
   return (
-    <Container className={cn('h-full px-4 pt-10 flex flex-col items-center')}>
-      <h1 className='font-bold text-2xl md:text-4xl'>MY SKILL</h1>
+    <Container className={cn('h-full px-4 pt-10 pb-12 space-y-16')}>
+      <h1 className='font-bold text-2xl md:text-4xl text-center'>MY SKILL</h1>
 
-      <div className='mt-16 space-y-5'>
+      <div className='space-y-5'>
         <SkillList title='Language' data={LANGUAGE_SKILL} />
         <Divider length={length} time={400} />
         <SkillList
