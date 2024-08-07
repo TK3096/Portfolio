@@ -5,7 +5,7 @@ import { ShowcaseCard } from './ShowcaseCard'
 
 export const ShowcaseSection: React.FC = () => {
   return (
-    <Container className='h-full px-4 pt-10 pb-12 space-y-16'>
+    <Container className='h-full px-4 pt-24 space-y-16'>
       <h1 className='font-bold text-2xl md:text-4xl text-center'>Showcase</h1>
 
       <div className='grid grid-cols-3 auto-flow-dense auto-rows-[200px_300px] gap-4'>

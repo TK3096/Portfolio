@@ -48,7 +48,7 @@ export const MySkillSection: React.FC = () => {
   const length = isMobile ? 6 : 12
 
   return (
-    <Container className={cn('h-full px-4 pt-10 pb-12 space-y-16')}>
+    <Container className={cn('h-full px-4 pt-24 space-y-16')}>
       <h1 className='font-bold text-2xl md:text-4xl text-center'>MY SKILL</h1>
 
       <div className='space-y-5'>

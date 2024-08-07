@@ -19,7 +19,7 @@ export const Navbar: React.FC = () => {
     <nav
       className={cn(
         'fixed w-full z-50 bg-neutral-900 bg-opacity-35',
-        y > 30 && 'bg-opacity-80 backdrop-blur-md',
+        (y > 30 || pathname === '/') && 'bg-opacity-80 backdrop-blur-md',
       )}
     >
       <Container className='px-3 py-4'>
