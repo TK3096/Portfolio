@@ -4,7 +4,7 @@ import { ShowcaseSection } from '@/components/about/ShowcaseSection'
 
 const AboutPage = () => {
   return (
-    <main className='h-screen relative snap-mandatory snap-y overflow-y-scroll'>
+    <main className='h-screen relative snap-mandatory snap-y'>
       <section className='h-screen snap-center'>
         <IntroductionSection />
       </section>
