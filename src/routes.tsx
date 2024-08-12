@@ -5,9 +5,11 @@ import RootLayout from '@/components/layout/RootLayout'
 import AboutPage from '@/pages/AboutPage'
 import ContactPage from '@/pages/ContactPage'
 
+import { convertUrlToBasePath } from '@/libs/utils'
+
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: convertUrlToBasePath(),
     element: <RootLayout />,
     children: [
       {

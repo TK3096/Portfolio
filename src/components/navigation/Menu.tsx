@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
-import { cn } from '@/libs/utils'
+import { cn, convertUrlToBasePath } from '@/libs/utils'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -22,7 +22,7 @@ const itemVariants = {
 const MENU = [
   {
     name: 'About',
-    href: '/',
+    href: convertUrlToBasePath(),
   },
   // {
   //   name: 'Project',
@@ -30,7 +30,7 @@ const MENU = [
   // },
   {
     name: 'Contact',
-    href: '/contact',
+    href: convertUrlToBasePath('/contact'),
   },
 ]
 

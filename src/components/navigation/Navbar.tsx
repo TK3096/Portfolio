@@ -8,7 +8,7 @@ import { Logo } from '@/components/navigation/Logo'
 import { Menu } from '@/components/navigation/Menu'
 import { Drawer } from '@/components/navigation/Drawer'
 
-import { cn } from '@/libs/utils'
+import { cn, convertUrlToBasePath } from '@/libs/utils'
 
 export const Navbar: React.FC = () => {
   const { pathname } = useLocation()
@@ -19,7 +19,8 @@ export const Navbar: React.FC = () => {
     <nav
       className={cn(
         'fixed w-full z-50 bg-neutral-900 bg-opacity-35',
-        (y > 30 || pathname === '/') && 'bg-opacity-80 backdrop-blur-md',
+        (y > 30 || pathname === convertUrlToBasePath()) &&
+          'bg-opacity-80 backdrop-blur-md',
       )}
     >
       <Container className='px-3 py-4'>

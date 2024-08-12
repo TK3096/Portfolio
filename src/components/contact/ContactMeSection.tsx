@@ -47,8 +47,8 @@ export const ContactMeSection: React.FC = () => {
         className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8'
       >
         {CONTACTS.map((contact) => (
-          <motion.div variants={itemVariants}>
-            <Link key={contact.label} to={contact.href}>
+          <motion.div key={contact.label} variants={itemVariants}>
+            <Link to={contact.href}>
               <ContactCard
                 Icon={contact.icon}
                 label={contact.label}

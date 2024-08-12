@@ -4,7 +4,7 @@ import { motion, useAnimation, useInView } from 'framer-motion'
 
 import { ContactMeBtn } from '@/components/about/ContactMeBtn'
 
-import { getDiffWorkYear } from '@/libs/utils'
+import { getDiffWorkYear, convertUrlToBasePath } from '@/libs/utils'
 
 const DESCRIPTION = `My name is Thanaphon (Tong) Keawjam. I am thai. I've been working in this line of work for ${getDiffWorkYear()} years (fulltime work). I try to learn new things to improve my skills and incress my passion to coding.`
 
@@ -52,7 +52,8 @@ export const IntroContent: React.FC = () => {
   const navigate = useNavigate()
 
   const handleClickContactMe = () => {
-    navigate('/contact')
+    const url = convertUrlToBasePath('/contact')
+    navigate(url)
   }
 
   useEffect(() => {
