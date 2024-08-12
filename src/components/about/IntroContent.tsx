@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion, useAnimation, useInView } from 'framer-motion'
 
 import { ContactMeBtn } from '@/components/about/ContactMeBtn'
@@ -48,6 +49,11 @@ export const IntroContent: React.FC = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { amount: 0.5, once: true })
   const controls = useAnimation()
+  const navigate = useNavigate()
+
+  const handleClickContactMe = () => {
+    navigate('/contact')
+  }
 
   useEffect(() => {
     let timmer: NodeJS.Timeout
@@ -108,7 +114,7 @@ export const IntroContent: React.FC = () => {
         </motion.p>
       </div>
 
-      <ContactMeBtn onClick={() => {}} />
+      <ContactMeBtn onClick={handleClickContactMe} />
     </div>
   )
 }

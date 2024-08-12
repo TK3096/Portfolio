@@ -55,7 +55,7 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = (
         <img
           src={image}
           alt={title}
-          className='w-full h-full object-cover object-center cursor-pointer group-hover:scale-125 transition-transform duration-300'
+          className='w-full h-full object-center cursor-pointer group-hover:scale-125 transition-transform duration-300'
         />
       </div>
       <p className='hidden md:inline absolute top-0 left-2/4 group-hover:top-2/4 -translate-x-2/4 group-hover:-translate-y-2/4 pointer-events-none opacity-0 group-hover:opacity-100 transition-all duration-300 font-bold text-lg'>
