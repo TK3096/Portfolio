@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
 
-import { cn } from '@/libs/utils'
+import { cn, convertUrlToBasePath } from '@/libs/utils'
 
 const variants = {
   hidden: { opacity: 0, scale: 0.2 },
@@ -41,6 +41,8 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = (
     }
   }, [isInViwe])
 
+  console.log(convertUrlToBasePath(image))
+
   return (
     <motion.div
       ref={ref}
@@ -53,7 +55,7 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = (
     >
       <div className='w-full h-full overflow-hidden rounded-lg group-hover:opacity-60 transition-opacity duration-300'>
         <img
-          src={image}
+          src={convertUrlToBasePath(image)}
           alt={title}
           className='w-full h-full object-center cursor-pointer group-hover:scale-125 transition-transform duration-300'
         />
