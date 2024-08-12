@@ -21,7 +21,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Set base path for production
-        run: echo "VITE_BASE_PATH=/portfolio" >> $GITHUB_ENV
+        run: echo "VITE_BASE_PATH=/portfolio/" >> $GITHUB_ENV
 
       - name: Build project
         run: npm run build

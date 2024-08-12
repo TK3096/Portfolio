@@ -17,9 +17,7 @@ export const convertUrlToBasePath = (url?: string) => {
     return basePapth
   }
 
-  if (basePapth === '/') {
-    return url
-  }
+  const target = `${basePapth}${url}`.replace(/\/\//g, '/')
 
-  return `${basePapth}${url}`
+  return target
 }

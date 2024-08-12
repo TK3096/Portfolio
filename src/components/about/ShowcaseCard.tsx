@@ -41,8 +41,6 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = (
     }
   }, [isInViwe])
 
-  console.log(convertUrlToBasePath(image))
-
   return (
     <motion.div
       ref={ref}
