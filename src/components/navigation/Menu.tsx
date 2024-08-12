@@ -26,7 +26,7 @@ const MENU = [
   },
   // {
   //   name: 'Project',
-  //   href: '/project',
+  //   href: '/projects',
   // },
   {
     name: 'Contact',

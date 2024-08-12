@@ -40,22 +40,22 @@ export const SHOWCASE = [
   {
     image: '/assets/images/tasks-management-thumbnail.png',
     title: 'Tasks Management',
-    href: '/project',
+    href: '/projects?name=tasks-management',
   },
   {
     image: '/assets/images/netflix-thumbnail.png',
     title: 'Netflix Clone',
-    href: '/',
+    href: '/projects?name=netflix-clone',
   },
   {
     image: '/assets/images/twitter-thumbnail.png',
     title: 'Twitter Clone',
-    href: '/',
+    href: '/projects?name=twitter-clone',
   },
   {
     image: '/assets/images/line-chat-bot-thumbnail.png',
     title: 'PFT Chat bot',
-    href: '/',
+    href: '/projects?name=pft-chat-bot',
   },
   {
     image: 'https://via.placeholder.com/400x400',
