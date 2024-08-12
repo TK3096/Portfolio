@@ -37,42 +37,27 @@ export const VERSION_CONTROL_SKILL = ['Git', 'GitHub', 'GitLab']
 export const SHOWCASE = [
   {
     image: 'https://via.placeholder.com/1600x900',
-    title: 'Project 1',
+    title: 'Tasks Management',
     href: '/project',
   },
   {
     image: 'https://via.placeholder.com/1600x900',
-    title: 'Project 2',
+    title: 'Netflix Clone',
     href: '/',
   },
   {
     image: 'https://via.placeholder.com/1600x900',
-    title: 'Project 3',
+    title: 'Twitter Clone',
     href: '/',
   },
   {
     image: 'https://via.placeholder.com/1600x900',
-    title: 'Project 4',
+    title: 'PFT Chat bot',
     href: '/',
   },
   {
     image: 'https://via.placeholder.com/1600x900',
     title: 'Project 5',
-    href: '/',
-  },
-  {
-    image: 'https://via.placeholder.com/1600x900',
-    title: 'Project 6',
-    href: '/',
-  },
-  {
-    image: 'https://via.placeholder.com/1600x900',
-    title: 'Project 7',
-    href: '/',
-  },
-  {
-    image: 'https://via.placeholder.com/1600x900',
-    title: 'Project 8',
     href: '/',
   },
 ]

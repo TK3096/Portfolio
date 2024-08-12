@@ -24,10 +24,10 @@ const MENU = [
     name: 'About',
     href: '/',
   },
-  {
-    name: 'Project',
-    href: '/project',
-  },
+  // {
+  //   name: 'Project',
+  //   href: '/project',
+  // },
   {
     name: 'Contact',
     href: '/contact',

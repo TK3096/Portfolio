@@ -13,10 +13,10 @@ const router = createBrowserRouter([
         index: true,
         element: <AboutPage />,
       },
-      {
-        path: 'project',
-        element: <div>Project</div>,
-      },
+      // {
+      //   path: 'project',
+      //   element: <div>Project</div>,
+      // },
       {
         path: 'contact',
         element: <div>Contact</div>,

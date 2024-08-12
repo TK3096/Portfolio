@@ -1,10 +1,10 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect, useRef } from 'react'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 import { cn } from '@/libs/utils'
 
 const variants = {
-  hidden: { opacity: 0, scale: 1.2 },
+  hidden: { opacity: 0, scale: 0.2 },
   visible: (index = 1) => ({
     opacity: 1,
     scale: 1,
@@ -29,12 +29,25 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = (
 ) => {
   const { title, image, className, onClick, index } = props
 
+  const ref = useRef<HTMLDivElement>(null)
+  const isInViwe = useInView(ref, { amount: 0.5 })
+  const controls = useAnimation()
+
+  useEffect(() => {
+    if (isInViwe) {
+      controls.start('visible')
+    } else {
+      controls.start('hidden')
+    }
+  }, [isInViwe])
+
   return (
     <motion.div
+      ref={ref}
       className={cn('relative group overflow-hidden', className)}
       onClick={onClick}
       initial='hidden'
-      animate='visible'
+      animate={controls}
       variants={variants}
       custom={index}
     >

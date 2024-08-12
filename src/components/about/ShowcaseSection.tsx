@@ -1,49 +1,55 @@
-import React, { useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react'
 import { motion } from 'framer-motion'
 
+import { SeeMoreBtn } from '@/components/about/SeeMoreBtn'
 import { Container } from '@/components/layout/Container'
 import { ShowcaseCard } from '@/components/about/ShowcaseCard'
 
 import { SHOWCASE } from '@/libs/constants'
 
 export const ShowcaseSection: React.FC = () => {
-  const navigate = useNavigate()
-
-  const randomGridSpan = useMemo(() => {
-    return SHOWCASE.map(() => {
-      const rand = Math.random()
-
-      if (rand > 0.8) {
-        return 'col-span-2'
-      } else if (rand > 0.6) {
-        return 'row-span-2'
-      } else {
-        return ''
-      }
-    })
-  }, [])
-
-  const handleShowcaseClick = (href: string) => {
-    navigate(href)
-  }
-
   return (
     <Container className='h-full px-4 pt-24 pb-20 space-y-16'>
       <h1 className='font-bold text-2xl md:text-4xl text-center'>SHOWCASE</h1>
 
-      <motion.div className='grid grid-cols-2 md:grid-cols-4 grid-flow-dense auto-rows-[200px_300px] gap-4'>
-        {SHOWCASE.map((showcase, index) => (
+      <div className='space-y-8'>
+        <motion.div className='grid grid-cols-2 md:grid-cols-4 grid-flow-dense auto-rows-[200px_300px] gap-4'>
           <ShowcaseCard
-            key={showcase.title}
-            index={index}
-            title={showcase.title}
-            image={showcase.image}
-            className={randomGridSpan[index]}
-            onClick={() => handleShowcaseClick(showcase.href)}
+            index={0}
+            title={SHOWCASE[0].title}
+            image={SHOWCASE[0].image}
+            className='col-span-2'
           />
-        ))}
-      </motion.div>
+          <ShowcaseCard
+            index={1}
+            title={SHOWCASE[1].title}
+            image={SHOWCASE[1].image}
+            className='col-span-1'
+          />
+          <ShowcaseCard
+            index={2}
+            title={SHOWCASE[2].title}
+            image={SHOWCASE[2].image}
+            className='col-span-1'
+          />
+          <ShowcaseCard
+            index={3}
+            title={SHOWCASE[3].title}
+            image={SHOWCASE[3].image}
+            className='col-span-3'
+          />
+          <ShowcaseCard
+            index={4}
+            title={SHOWCASE[4].title}
+            image={SHOWCASE[4].image}
+            className='col-span-1'
+          />
+        </motion.div>
+
+        <div className='flex justify-center'>
+          <SeeMoreBtn onClick={() => {}} />
+        </div>
+      </div>
     </Container>
   )
 }
