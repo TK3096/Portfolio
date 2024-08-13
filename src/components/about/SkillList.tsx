@@ -39,8 +39,8 @@ export const SkillList: React.FC<SkillListProps> = (props: SkillListProps) => {
   }, [isInView])
 
   return (
-    <div className='flex flex-col items-center gap-5'>
-      <h3 className='font-semibold text-lg md:text-xl'>{title}</h3>
+    <div className='flex flex-col items-center gap-12'>
+      <h3 className='font-semibold text-2lg md:text-4xl'>{title}</h3>
       <motion.div
         ref={ref}
         className='flex gap-2 justify-center flex-wrap w-[300px] md:w-[700px]'
