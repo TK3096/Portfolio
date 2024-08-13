@@ -58,7 +58,7 @@ const AboutPage = () => {
         <TitleSection title='SHOWCASE' />
       </section>
 
-      <section className='h-dvh snap-center'>
+      <section className='h-dvh snap-center my-24'>
         <ShowcaseSection />
       </section>
     </main>
