@@ -10,7 +10,7 @@ import { SHOWCASE } from '@/libs/constants'
 export const ShowcaseSection: React.FC = () => {
   return (
     <Container className='flex flex-col items-center justify-center h-full px-4 gap-8'>
-      <motion.div className='w-full grid grid-cols-2 md:grid-cols-4 grid-flow-dense auto-rows-[100px_200px] md:auto-rows-[200px_300px] gap-4'>
+      <motion.div className='w-full grid grid-cols-2 md:grid-cols-4 grid-flow-dense auto-rows-[80px_100px] md:auto-rows-[200px_300px] gap-4'>
         <ShowcaseCard
           index={0}
           title={SHOWCASE[0].title}

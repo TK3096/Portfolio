@@ -44,7 +44,10 @@ export const ShowcaseCard: React.FC<ShowcaseCardProps> = (
   return (
     <motion.div
       ref={ref}
-      className={cn('relative group overflow-hidden', className)}
+      className={cn(
+        'relative group overflow-hidden border-2 border-neutral-700 rounded-lg',
+        className,
+      )}
       onClick={onClick}
       initial='hidden'
       animate={controls}
